@@ -4,8 +4,6 @@ collectMonthlyRange = function(start_year, end_year) {
   dia_final = 0
   mes = 1
   dados = c()
-  start_year = start_year
-  end_year = end_year
   data_range_daily = YearlyDataFetch(start_year, end_year)
   while(dia_inicial <= length(data_range_daily)) {
     for (mes in 1:12) {
